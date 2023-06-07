@@ -207,6 +207,10 @@ header {
   text-align: center;
 }
 
+.features-card img {
+  width: 30%;
+}
+
 /*big-feature section*/
 
 .big-feature-section {
@@ -270,4 +274,53 @@ header {
 
 .examples-card:nth-child(4) {
   background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(/assets/asset\ 39.jpeg);
+}
+
+/*cta section*/
+
+.cta-section-container {
+  flex-direction: column;
+  gap: 30px;
+  color: white; /*ask Ivan why it doesn't change the color of p*/
+  background-color: #183b54;
+}
+
+.cta-section {
+  padding: 120px var(--padding-inline-section) 80px;
+  background-color: #183b54;
+}
+
+.cta-section-container p {
+  color: white;
+  margin-top: 20px;
+}
+
+/*footer*/
+
+.link-column {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-container {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+footer {
+  padding-block: 80px;
+  background-color: #ebf2fa;
+}
+
+/*sub-footer*/
+
+.subfooter {
+  background-color: #b9cde4;
+  padding: var(--padding-inline-section);
+}
+
+.subfooter-container {
+  gap: 30px;
+  justify-content: center;
 }
