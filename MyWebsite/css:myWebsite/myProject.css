@@ -1,5 +1,5 @@
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+/**/
   * {
     margin: 0;
     padding: 0;
@@ -39,28 +39,96 @@
     display: inline-block;
   }
 
+  ul {
+    list-style: none;
+  }
+
 /* utility classes */
 
   .small-bold-text {
     font-size: 1rem;
     font-weight: 700;
   }
+
+  .container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section); /*makes it more responsive when changing the size of the page*/
+  }
+
+  .flex{
+    display: flex; /* makes them go sideways*/
+    align-items: center;
+  }
+
+  .hover-link{
+    color: var(--primary-text-color);
+  }
+
+  .hover-link:hover {
+    color: var(--accent-color); /* color changes when mouse is on them*/
+    transition: 0.2s ease-out; /*check the ease out*/
+  }
+
+  .primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px; /*makes the borders rounder can even make it circular*/
+    font-weight: 700; /*seems to be a standard for boldness*/
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+  }
+
+  .primary-button:hover {
+    background-color: var(--accent-color-dark);
+  }
+
+  .secondary-button {
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color) !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+  }
+
+  .secondary-button:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+  }
   
+/* top banner*/
+
   .banner-text {
       color: white;
       padding: 15px 30px;
       text-align: center;
     }
 
-.container {
-    max-width: 1180px;
-    margin-inline: auto;
-    padding-inline: var(--padding-inline-section); /*makes it more responsive when changing the size of the page*/
-  }
-
 .top-banner {
     background-image: url('/assets/asset\ 32.png');
     background-color: #4fb3d4;
     background-size: 300px; /* makes the image bigger or smaller*/
     /*background-repeat: no-repeat; this will make the picture appear only in the left corner*/
+}
+
+/*nav*/
+
+.main-nav {
+  margin-top: 20px; /* space between the nav and the div (banner)*/
+  justify-content: space-between;
+}
+
+.company-logo img {
+  width: 200px;
+}
+
+.nav-links {
+  flex-basis: 730px; /*space between the li*/
+}
+
+.nav-links ul{
+  justify-content: end; /*puts the ul at the end of the page*/
+  gap: 40px; /*space between the li*/
 }
